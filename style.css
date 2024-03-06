@@ -3,21 +3,25 @@ body{
     text-align: center;
     overflow: hidden;
     overflow-y:scroll;
+    max-width: 1600px;
 
 }
 .nav{
+    max-width: 1600px;
     width:100vw;
+    display:flex;
     border-bottom-width:2px;
-    border-color:black;
+    border-bottom-color:#eeeeee;
+    flex-wrap: wrap;
 }
 .nav-trailing{
-    float:right;
+    margin-left:auto;
 }
 .nav-logo{
-    float:left;
+    justify-content: start;
 }
 .nav-start{
-    float:left;
+    justify-content: start;
 }
 .nav-start a,.nav-trailing a{
     text-decoration: none;
@@ -61,4 +65,8 @@ body{
     position: absolute;
     top:50vh;
     left:calc(50vw - 230px);
+}
+
+@media screen and (maxwidth:1000px){/* difrence between small and big scrrean layout   */
+    
 }
